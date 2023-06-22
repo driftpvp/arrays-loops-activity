@@ -6,7 +6,14 @@
  * 3. After the loop, log out the total number of
  *    hobbies
  */
+let groupHobbies = ['paddle boarding', 'fishing', 'DIY house projects']
 
+console.log(groupHobbies [1]);
+for (let i = 0; i < groupHobbies.length; i += 1){
+    console.log( `${i + 1}. ${groupHobbies [i]}`);
+}
+console.log("Total Hobbies:" + groupHobbies.length);
+console.log(``);
 
 // Example output
 // 1. swimming
@@ -24,7 +31,23 @@
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
-
+let favoriteColors = ['pink', 'teal', 'green', 'teal'];
+let tealCount = 0
+let finalString = ''
+for (let i = 0; i < favoriteColors.length; i+= 1 ){
+    if(favoriteColors[i] === 'teal'){
+        tealCount += 1;
+    }
+    if(i == favoriteColors.length - 1){
+        console.log('last item: ', favoriteColors[i]);
+        finalString += `${favoriteColors[i]}`
+    }else{
+        finalString += `${favoriteColors[i]}, ` 
+    }
+     
+}
+console.log( finalString );
+console.log(`teal found ${tealCount} times out of ${favoriteColors.length}`);
 
 // Example output
 // green, red, teal, orange, teal
@@ -40,6 +63,19 @@
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+let numberChain = [1, 4, 5, 7, 8, 3, 9];
+let evenNumbers = []
+let oddNumbers = []
+for (let i = 0; i < numberChain.length; i+= 1){
+    if (numberChain [i]%2==0){  
+        console.log( 'Even Numbers are:', numberChain[i]); 
+    } 
+    if (numberChain[i]%2==1){ 
+    console.log( 'Odd Numbers are:', numberChain[i]);
+}  
+    console.log( 'Original Array', numberChain[i]);
+}
+
 
 
 // Example output
@@ -56,7 +92,11 @@
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
-
+let boolean = ['true', 'true', 'true', 'false' ]
+let toggled = []
+for (let i = 0; i < boolean.length; i+= 1){
+    if (boolean [i], toggled.replace(boolean, "$2, $1"));
+}
 
 // Example output
 // true, false, true, true
